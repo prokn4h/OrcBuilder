@@ -3,4 +3,13 @@
     <string name="title_home">Home</string>
     <string name="title_gear">Gear</string>
     <string name="title_talents">Talents</string>
+    <string name="button_druid">druid</string>
+    <string name="button_hunter">hunter</string>
+    <string name="button_mage">mage</string>
+    <string name="button_paladin">paladin</string>
+    <string name="button_priest">priest</string>
+    <string name="button_rogue">rogue</string>
+    <string name="button_shaman">shaman</string>
+    <string name="button_warlock">warlock</string>
+    <string name="button_warrior">warrior</string>
 </resources>

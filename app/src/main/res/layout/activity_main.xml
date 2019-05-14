@@ -1,33 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#000000">
 
-    <TextView
-        android:id="@+id/message"
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:text="@string/title_home"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center"
+        android:background="#80000000"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
 
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="0dp"
-        android:background="?android:attr/windowBackground"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/bottom_nav_menu" />
+        <ImageButton
+            android:id="@+id/btnDruid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#80000000"
+            android:src="@drawable/druid"
+            android:text="@string/button_druid" />
 
-</android.support.constraint.ConstraintLayout>
+        <ImageButton
+            android:id="@+id/btnHunter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#80000000"
+            android:src="@drawable/hunter"
+            android:text="@string/button_hunter" />
+
+        <ImageButton
+            android:id="@+id/btnMage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#80000000"
+            android:src="@drawable/mage"
+            android:text="@string/button_mage" />
+
+        <ImageButton
+            android:id="@+id/btnPaladin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#80000000"
+            android:src="@drawable/paladin"
+            android:text="@string/button_paladin" />
+
+        <ImageButton
+            android:id="@+id/btnPriest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#80000000"
+            android:src="@drawable/priest"
+            android:text="@string/button_priest" />
+
+        <ImageButton
+            android:id="@+id/btnRogue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#80000000"
+            android:src="@drawable/rogue"
+            android:text="@string/button_rogue" />
+
+        <ImageButton
+            android:id="@+id/btnShaman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#80000000"
+            android:src="@drawable/shaman"
+            android:text="@string/button_shaman" />
+
+        <ImageButton
+            android:id="@+id/btnWarlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#80000000"
+            android:src="@drawable/warlock"
+            android:text="@string/button_warlock" />
+
+        <ImageButton
+            android:id="@+id/btnWarrior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#80000000"
+            android:src="@drawable/warrior"
+            android:text="@string/button_warrior" />
+
+
+    </GridLayout>
+
+</RelativeLayout>
