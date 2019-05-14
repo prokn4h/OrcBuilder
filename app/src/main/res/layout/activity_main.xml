@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="#000000">
 
-    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:background="#80000000"
             android:src="@drawable/druid"
-            android:text="@string/button_druid" />
+            android:contentDescription="@string/button_druid" />
 
         <ImageButton
             android:id="@+id/btnHunter"
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:background="#80000000"
             android:src="@drawable/hunter"
-            android:text="@string/button_hunter" />
+            android:contentDescription="@string/button_hunter" />
 
         <ImageButton
             android:id="@+id/btnMage"
@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:background="#80000000"
             android:src="@drawable/mage"
-            android:text="@string/button_mage" />
+            android:contentDescription="@string/button_mage" />
 
         <ImageButton
             android:id="@+id/btnPaladin"
@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:background="#80000000"
             android:src="@drawable/paladin"
-            android:text="@string/button_paladin" />
+            android:contentDescription="@string/button_paladin" />
 
         <ImageButton
             android:id="@+id/btnPriest"
@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:background="#80000000"
             android:src="@drawable/priest"
-            android:text="@string/button_priest" />
+            android:contentDescription="@string/button_priest" />
 
         <ImageButton
             android:id="@+id/btnRogue"
@@ -59,7 +59,7 @@
             android:layout_height="wrap_content"
             android:background="#80000000"
             android:src="@drawable/rogue"
-            android:text="@string/button_rogue" />
+            android:contentDescription="@string/button_rogue" />
 
         <ImageButton
             android:id="@+id/btnShaman"
@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:background="#80000000"
             android:src="@drawable/shaman"
-            android:text="@string/button_shaman" />
+            android:contentDescription="@string/button_shaman" />
 
         <ImageButton
             android:id="@+id/btnWarlock"
@@ -75,7 +75,7 @@
             android:layout_height="wrap_content"
             android:background="#80000000"
             android:src="@drawable/warlock"
-            android:text="@string/button_warlock" />
+            android:contentDescription="@string/button_warlock" />
 
         <ImageButton
             android:id="@+id/btnWarrior"
@@ -83,8 +83,7 @@
             android:layout_height="wrap_content"
             android:background="#80000000"
             android:src="@drawable/warrior"
-            android:text="@string/button_warrior" />
-
+            android:contentDescription="@string/button_warrior" />
 
     </GridLayout>
 
