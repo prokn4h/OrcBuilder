@@ -1,23 +1,26 @@
 package com.example.orcbuilder;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import java.util.Random;
 
 public class TalentsFragment extends Fragment {
 
-    static final String ARGUMENT_PAGE_NUMBER = "arg_page_number";
+    private static final String ARGUMENT_PAGE_NUMBER = "arg_page_number";
+    private static final String TAG = "TalentsFragment";
 
-    int pageNumber;
-    int backColor;
+    private int pageNumber;
+    private String gameClass;
+    private int firstPageBG;
+    private int secondPageBG;
+    private int thirdPageBG;
 
     public static TalentsFragment newInstance(int page) {
         TalentsFragment talentsFragment = new TalentsFragment();
@@ -30,11 +33,11 @@ public class TalentsFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        gameClass = getActivity().getIntent().getExtras().getString("GAME_CLASS");
+        firstPageBG = getActivity().getIntent().getExtras().getInt("FIRST_PAGE_BG");
+        secondPageBG = getActivity().getIntent().getExtras().getInt("SECOND_PAGE_BG");
+        thirdPageBG = getActivity().getIntent().getExtras().getInt("THIRD_PAGE_BG");
         pageNumber = getArguments().getInt(ARGUMENT_PAGE_NUMBER);
-
-        Random rnd = new Random();
-        backColor = Color.argb(40, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
     }
 
     @Nullable
@@ -43,8 +46,21 @@ public class TalentsFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_talents, container, false);
 
         TextView specPage = view.findViewById(R.id.specPage);
-        specPage.setText("Page " + pageNumber);
-        specPage.setBackgroundColor(backColor);
+
+        switch (pageNumber) {
+            case (0):
+                specPage.setBackground(ContextCompat.getDrawable(getContext(), firstPageBG));
+                break;
+            case (1):
+                specPage.setBackground(ContextCompat.getDrawable(getContext(), secondPageBG));
+                break;
+            case (2):
+                specPage.setBackground(ContextCompat.getDrawable(getContext(), thirdPageBG));
+                break;
+            default:
+                specPage.setBackground(ContextCompat.getDrawable(getContext(), firstPageBG));
+                break;
+        }
 
         return view;
     }

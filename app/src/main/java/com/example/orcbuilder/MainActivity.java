@@ -18,8 +18,12 @@ public class MainActivity extends AppCompatActivity {
         btnWarlock.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(MainActivity.this, TalentsActivity.class);
-                MainActivity.this.startActivity(myIntent);
+                Intent intent = new Intent(MainActivity.this, TalentsActivity.class);
+                intent.putExtra("GAME_CLASS", "warlock");
+                intent.putExtra("FIRST_PAGE_BG", R.drawable.warlock_affliction);
+                intent.putExtra("SECOND_PAGE_BG", R.drawable.warlock_demonology);
+                intent.putExtra("THIRD_PAGE_BG", R.drawable.warlock_destruction);
+                MainActivity.this.startActivity(intent);
             }
         });
     }
