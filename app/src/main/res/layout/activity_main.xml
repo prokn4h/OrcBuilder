@@ -7,83 +7,83 @@
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:layout_gravity="center"
         android:background="#80000000"
         android:columnCount="3"
-        android:orientation="horizontal"
-        android:layout_centerInParent="true">
+        android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/btnDruid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#80000000"
-            android:src="@drawable/druid"
-            android:contentDescription="@string/button_druid" />
+            android:contentDescription="@string/button_druid"
+            android:src="@drawable/druid" />
 
         <ImageButton
             android:id="@+id/btnHunter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#80000000"
-            android:src="@drawable/hunter"
-            android:contentDescription="@string/button_hunter" />
+            android:contentDescription="@string/button_hunter"
+            android:src="@drawable/hunter" />
 
         <ImageButton
             android:id="@+id/btnMage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#80000000"
-            android:src="@drawable/mage"
-            android:contentDescription="@string/button_mage" />
+            android:contentDescription="@string/button_mage"
+            android:src="@drawable/mage" />
 
         <ImageButton
             android:id="@+id/btnPaladin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#80000000"
-            android:src="@drawable/paladin"
-            android:contentDescription="@string/button_paladin" />
+            android:contentDescription="@string/button_paladin"
+            android:src="@drawable/paladin" />
 
         <ImageButton
             android:id="@+id/btnPriest"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#80000000"
-            android:src="@drawable/priest"
-            android:contentDescription="@string/button_priest" />
+            android:contentDescription="@string/button_priest"
+            android:src="@drawable/priest" />
 
         <ImageButton
             android:id="@+id/btnRogue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#80000000"
-            android:src="@drawable/rogue"
-            android:contentDescription="@string/button_rogue" />
+            android:contentDescription="@string/button_rogue"
+            android:src="@drawable/rogue" />
 
         <ImageButton
             android:id="@+id/btnShaman"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#80000000"
-            android:src="@drawable/shaman"
-            android:contentDescription="@string/button_shaman" />
+            android:contentDescription="@string/button_shaman"
+            android:src="@drawable/shaman" />
 
         <ImageButton
             android:id="@+id/btnWarlock"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#80000000"
-            android:src="@drawable/warlock"
-            android:contentDescription="@string/button_warlock" />
+            android:contentDescription="@string/button_warlock"
+            android:src="@drawable/warlock" />
 
         <ImageButton
             android:id="@+id/btnWarrior"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#80000000"
-            android:src="@drawable/warrior"
-            android:contentDescription="@string/button_warrior" />
+            android:contentDescription="@string/button_warrior"
+            android:src="@drawable/warrior" />
 
     </GridLayout>
 
