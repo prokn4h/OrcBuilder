@@ -8,7 +8,7 @@ import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.GridLayout;
 
 
 public class TalentsFragment extends Fragment {
@@ -21,6 +21,10 @@ public class TalentsFragment extends Fragment {
     private int firstPageBG;
     private int secondPageBG;
     private int thirdPageBG;
+    private int currentView;
+    private int firstPageView;
+    private int secondPageView;
+    private int thirdPageView;
 
     public static TalentsFragment newInstance(int page) {
         TalentsFragment talentsFragment = new TalentsFragment();
@@ -37,31 +41,42 @@ public class TalentsFragment extends Fragment {
         firstPageBG = getActivity().getIntent().getExtras().getInt("FIRST_PAGE_BG");
         secondPageBG = getActivity().getIntent().getExtras().getInt("SECOND_PAGE_BG");
         thirdPageBG = getActivity().getIntent().getExtras().getInt("THIRD_PAGE_BG");
+        firstPageView = getActivity().getIntent().getExtras().getInt("FIRST_PAGE_VIEW");
+        secondPageView = getActivity().getIntent().getExtras().getInt("SECOND_PAGE_VIEW");
+        thirdPageView = getActivity().getIntent().getExtras().getInt("THIRD_PAGE_VIEW");
         pageNumber = getArguments().getInt(ARGUMENT_PAGE_NUMBER);
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_talents, container, false);
-
-        TextView specPage = view.findViewById(R.id.specPage);
 
         switch (pageNumber) {
             case (0):
+                //currentView = R.layout.fragment_warlock_affliction_talents;
+                View view = inflater.inflate(firstPageView, container, false);
+                GridLayout specPage = view.findViewById(R.id.specPage);
                 specPage.setBackground(ContextCompat.getDrawable(getContext(), firstPageBG));
-                break;
+                return view;
             case (1):
+                //currentView = R.layout.fragment_warlock_demonology_talents;
+                view = inflater.inflate(secondPageView, container, false);
+                specPage = view.findViewById(R.id.specPage);
                 specPage.setBackground(ContextCompat.getDrawable(getContext(), secondPageBG));
-                break;
+                return view;
             case (2):
+                //currentView = R.layout.fragment_warlock_destruction_talents;
+                view = inflater.inflate(thirdPageView, container, false);
+                specPage = view.findViewById(R.id.specPage);
                 specPage.setBackground(ContextCompat.getDrawable(getContext(), thirdPageBG));
-                break;
+                return view;
             default:
+                //currentView = R.layout.fragment_warlock_affliction_talents;
+                view = inflater.inflate(firstPageView, container, false);
+                specPage = view.findViewById(R.id.specPage);
                 specPage.setBackground(ContextCompat.getDrawable(getContext(), firstPageBG));
-                break;
+                return view;
         }
 
-        return view;
     }
 }
