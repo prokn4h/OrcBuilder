@@ -3,12 +3,12 @@ package com.example.orcbuilder;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.constraint.ConstraintLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.GridLayout;
 
 
 public class TalentsFragment extends Fragment {
@@ -21,7 +21,6 @@ public class TalentsFragment extends Fragment {
     private int firstPageBG;
     private int secondPageBG;
     private int thirdPageBG;
-    private int currentView;
     private int firstPageView;
     private int secondPageView;
     private int thirdPageView;
@@ -55,7 +54,7 @@ public class TalentsFragment extends Fragment {
             case (0):
                 //currentView = R.layout.fragment_warlock_affliction_talents;
                 View view = inflater.inflate(firstPageView, container, false);
-                GridLayout specPage = view.findViewById(R.id.specPage);
+                ConstraintLayout specPage = view.findViewById(R.id.specPage);
                 specPage.setBackground(ContextCompat.getDrawable(getContext(), firstPageBG));
                 return view;
             case (1):

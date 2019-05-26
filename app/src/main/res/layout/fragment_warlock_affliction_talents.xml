@@ -1,30 +1,212 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/specPage"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:columnCount="4"
-    android:rowCount="7"
-    android:layout_gravity="center_horizontal">
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/btnTalentImprovedCorruption7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="104dp"
+        android:adjustViewBounds="false"
+        android:background="#80000000"
+        android:src="@drawable/talent_improved_corruption"
+        app:layout_constraintStart_toEndOf="@+id/btnTalentSuppression3"
+        app:layout_constraintTop_toBottomOf="@+id/btnTalentImprovedCorruption5" />
+
+    <ImageButton
+        android:id="@+id/btnTalentImprovedCorruption6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="104dp"
+        android:adjustViewBounds="false"
+        android:background="#80000000"
+        android:src="@drawable/talent_improved_corruption"
+        app:layout_constraintStart_toEndOf="@+id/btnTalentSuppression5"
+        app:layout_constraintTop_toBottomOf="@+id/btnTalentImprovedCorruption3" />
+
+    <ImageButton
+        android:id="@+id/btnTalentImprovedCorruption5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:adjustViewBounds="false"
+        android:background="#80000000"
+        android:src="@drawable/talent_improved_corruption"
+        app:layout_constraintStart_toEndOf="@+id/btnTalentSuppression4"
+        app:layout_constraintTop_toBottomOf="@+id/btnTalentImprovedCorruption4" />
+
+    <ImageButton
+        android:id="@+id/btnTalentImprovedCorruption4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:adjustViewBounds="false"
+        android:background="#80000000"
+        android:src="@drawable/talent_improved_corruption"
+        app:layout_constraintStart_toEndOf="@+id/btnTalentSuppression2"
+        app:layout_constraintTop_toBottomOf="@+id/btnTalentImprovedCorruption2" />
+
+    <ImageButton
+        android:id="@+id/btnTalentImprovedCorruption3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="112dp"
+        android:adjustViewBounds="false"
+        android:background="#80000000"
+        android:src="@drawable/talent_improved_corruption"
+        app:layout_constraintStart_toEndOf="@+id/btnTalentImprovedCorruption4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnTalentImprovedCorruption2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:adjustViewBounds="false"
+        android:background="#80000000"
+        android:src="@drawable/talent_improved_corruption"
+        app:layout_constraintStart_toEndOf="@+id/btnTalentSuppression"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnTalentSuppression10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:adjustViewBounds="false"
+        android:background="#80000000"
+        android:src="@drawable/talent_suppression"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTalentSuppression9" />
+
+    <ImageButton
+        android:id="@+id/btnTalentSuppression8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="112dp"
+        android:adjustViewBounds="false"
+        android:background="#80000000"
+        android:src="@drawable/talent_suppression"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnTalentSuppression9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:adjustViewBounds="false"
+        android:background="#80000000"
+        android:src="@drawable/talent_suppression"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTalentSuppression8" />
+
+    <ImageButton
+        android:id="@+id/btnTalentSuppression7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="24dp"
+        android:adjustViewBounds="false"
+        android:background="#80000000"
+        android:src="@drawable/talent_suppression"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTalentSuppression3" />
+
+    <ImageButton
+        android:id="@+id/btnTalentSuppression6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="24dp"
+        android:adjustViewBounds="false"
+        android:background="#80000000"
+        android:src="@drawable/talent_suppression"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTalentSuppression7" />
+
+    <ImageButton
+        android:id="@+id/btnTalentSuppression5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:adjustViewBounds="false"
+        android:background="#80000000"
+        android:src="@drawable/talent_suppression"
+        app:layout_constraintStart_toEndOf="@+id/btnTalentSuppression10"
+        app:layout_constraintTop_toBottomOf="@+id/btnTalentSuppression4" />
+
+    <ImageButton
+        android:id="@+id/btnTalentSuppression4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:adjustViewBounds="false"
+        android:background="#80000000"
+        android:src="@drawable/talent_suppression"
+        app:layout_constraintStart_toEndOf="@+id/btnTalentSuppression9"
+        app:layout_constraintTop_toBottomOf="@+id/btnTalentSuppression2" />
+
+    <ImageButton
+        android:id="@+id/btnTalentSuppression3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="24dp"
+        android:adjustViewBounds="false"
+        android:background="#80000000"
+        android:src="@drawable/talent_suppression"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTalentSuppression5" />
+
+    <ImageButton
+        android:id="@+id/btnTalentSuppression2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:adjustViewBounds="false"
+        android:background="#80000000"
+        android:src="@drawable/talent_suppression"
+        app:layout_constraintStart_toEndOf="@+id/btnTalentSuppression8"
+        app:layout_constraintTop_toBottomOf="@+id/btnTalentSuppression" />
 
     <ImageButton
         android:id="@+id/btnTalentSuppression"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_row="0"
-        android:layout_column="1"
-        android:layout_margin="10dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="32dp"
+        android:adjustViewBounds="false"
         android:background="#80000000"
-        android:src="@drawable/talent_suppression" />
+        android:src="@drawable/talent_suppression"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/btnTalentImprovedCorruption"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_row="0"
-        android:layout_column="2"
-        android:layout_margin="10dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="184dp"
+        android:adjustViewBounds="false"
         android:background="#80000000"
-        android:src="@drawable/talent_improved_corruption" />
+        android:src="@drawable/talent_improved_corruption"
+        app:layout_constraintStart_toEndOf="@+id/btnTalentImprovedCorruption7"
+        app:layout_constraintTop_toBottomOf="@+id/btnTalentImprovedCorruption3" />
 
-</GridLayout>
+</android.support.constraint.ConstraintLayout>
