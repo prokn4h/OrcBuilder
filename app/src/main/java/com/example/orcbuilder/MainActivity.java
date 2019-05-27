@@ -23,9 +23,9 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("FIRST_PAGE_BG", R.drawable.warlock_affliction);
                 intent.putExtra("SECOND_PAGE_BG", R.drawable.warlock_demonology);
                 intent.putExtra("THIRD_PAGE_BG", R.drawable.warlock_destruction);
-                intent.putExtra("FIRST_PAGE_VIEW", R.layout.fragment_warlock_affliction_talents);
+                /*intent.putExtra("FIRST_PAGE_VIEW", R.layout.fragment_warlock_affliction_talents);
                 intent.putExtra("SECOND_PAGE_VIEW", R.layout.fragment_warlock_demonology_talents);
-                intent.putExtra("THIRD_PAGE_VIEW", R.layout.fragment_warlock_destruction_talents);
+                intent.putExtra("THIRD_PAGE_VIEW", R.layout.fragment_warlock_destruction_talents);*/
                 MainActivity.this.startActivity(intent);
             }
         });

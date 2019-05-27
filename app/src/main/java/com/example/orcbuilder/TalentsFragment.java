@@ -9,6 +9,9 @@ import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.GridLayout;
+import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 
 
 public class TalentsFragment extends Fragment {
@@ -40,9 +43,9 @@ public class TalentsFragment extends Fragment {
         firstPageBG = getActivity().getIntent().getExtras().getInt("FIRST_PAGE_BG");
         secondPageBG = getActivity().getIntent().getExtras().getInt("SECOND_PAGE_BG");
         thirdPageBG = getActivity().getIntent().getExtras().getInt("THIRD_PAGE_BG");
-        firstPageView = getActivity().getIntent().getExtras().getInt("FIRST_PAGE_VIEW");
+        /*firstPageView = getActivity().getIntent().getExtras().getInt("FIRST_PAGE_VIEW");
         secondPageView = getActivity().getIntent().getExtras().getInt("SECOND_PAGE_VIEW");
-        thirdPageView = getActivity().getIntent().getExtras().getInt("THIRD_PAGE_VIEW");
+        thirdPageView = getActivity().getIntent().getExtras().getInt("THIRD_PAGE_VIEW");*/
         pageNumber = getArguments().getInt(ARGUMENT_PAGE_NUMBER);
     }
 
@@ -50,32 +53,24 @@ public class TalentsFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
+        View view = inflater.inflate(R.layout.fragment_talents, container, false);
+        ScrollView specTree = view.findViewById(R.id.scrollingSpecPage);
+
         switch (pageNumber) {
             case (0):
-                //currentView = R.layout.fragment_warlock_affliction_talents;
-                View view = inflater.inflate(firstPageView, container, false);
-                ConstraintLayout specPage = view.findViewById(R.id.specPage);
-                specPage.setBackground(ContextCompat.getDrawable(getContext(), firstPageBG));
-                return view;
+                specTree.setBackground(ContextCompat.getDrawable(getContext(), firstPageBG));
+                break;
             case (1):
-                //currentView = R.layout.fragment_warlock_demonology_talents;
-                view = inflater.inflate(secondPageView, container, false);
-                specPage = view.findViewById(R.id.specPage);
-                specPage.setBackground(ContextCompat.getDrawable(getContext(), secondPageBG));
-                return view;
+                specTree.setBackground(ContextCompat.getDrawable(getContext(), secondPageBG));
+                break;
             case (2):
-                //currentView = R.layout.fragment_warlock_destruction_talents;
-                view = inflater.inflate(thirdPageView, container, false);
-                specPage = view.findViewById(R.id.specPage);
-                specPage.setBackground(ContextCompat.getDrawable(getContext(), thirdPageBG));
-                return view;
+                specTree.setBackground(ContextCompat.getDrawable(getContext(), thirdPageBG));
+                break;
             default:
-                //currentView = R.layout.fragment_warlock_affliction_talents;
-                view = inflater.inflate(firstPageView, container, false);
-                specPage = view.findViewById(R.id.specPage);
-                specPage.setBackground(ContextCompat.getDrawable(getContext(), firstPageBG));
-                return view;
+                specTree.setBackground(ContextCompat.getDrawable(getContext(), firstPageBG));
+                break;
         }
 
+    return view;
     }
 }
